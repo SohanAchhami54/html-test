@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- part of the level 4 -->
+    <!--Block elements -->
+    <p id="para">This is paragraph</p>
+    <p id="para">This is paragraph</p>
+
+    <!-- Inline elements -->
+    <a href="#para">Go to paragraph</a> <a href="#para">Go to paragraph</a>
+
+    <!-- div => it is a non-semantic tag -->
+    <div>
+        <p>This is my first paragraph</p>
+        <big>This is big letter</big>
+    </div>
+
+    <!--Span-tag-->
+    <p>This is a <span class="highlight">Highlight</span>word in paragraph </p>
+
+    <!-- part of the level 5 -->
+
+    <!-- Ordered list -->
+    <ol type="A">
+        <li>Html</li>
+        <ol type="i">
+            <li>level a</li>
+            <li>level b</li>
+
+        </ol>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+    </ol>
+    <br>
+    <!-- Unordered List -->
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>mango</li>
+        <li>dragon fruit</li>
+    </ul>
+    <!-- Tables -->
+    <table border="1">
+        <caption>Student Information</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Prabhat</td>
+            <td>19</td>
+            <td>pravakc@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sohan</td>
+            <td>21</td>
+            <td>sohanachhami655@gmail.com</td>
+        </tr>
+        <tr>
+            <td colspan="3">This is student information blah blah blah</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <!--  Forms -->
+    <!-- Input-Tags -->
+    <form action="./submit.php">
+        <label for="email">Username:</label>
+        <input type="text" placeholder="email" required="true" id="email"> <br>
+        <label for="user_password">Password</label>
+        <input type="password" id="user_password"> <br>
+        <label for="user_date">Date:</label>
+        <input type="date" id="user_date"> <br>
+
+        <label for="user_file">File:</label>
+        <input type="file" id="user_file"> <br>
+        <label for="user_color">Color</label>
+        <input type="color" id="user_color"> <br>
+
+        <label for="user_range">Range:</label>
+        <input type="range" id="user_range"> <br>
+        <br>
+        <h1>Radio button</h1>
+        <label for="male">
+            <input type="radio" value="Male" name="gender" id="male">Male
+        </label>
+        <label for="female">
+            <input type="radio" value="Female" name="gender" id="female">Female
+        </label>
+        <label for="other">
+            <input type="radio" value="Other" name="gender" id="other">Other
+        </label> <br>
+        <h2>Checkbox</h2>
+        <label for="apple">
+            <input type="checkbox" value="Apple" name="fruits" id="apple">Apple
+        </label>
+        <label for="banana">
+            <input type="checkbox" value="Banana" name="fruits" id="banana">Banana
+        </label>
+        <label for="cherry">
+            <input type="checkbox" value="Cherry" name="fruits" id="cherry">Cherry
+        </label> <br>
+        <h3>Select</h3>
+        <label for="fruits">Choose a fruit:</label>
+        <select name="fruits" id="fruits">
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Orange">Orange</option>
+            <option value="Mango">Mango</option>
+        </select>
+        <br>
+        <h4>Textarea</h4>
+        <textarea name="resume" id="resume" cols="20" rows="4">Please write your resume</textarea>
+        <br>
+        <h4>iframe</h4>
+        <iframe src="https://www.wikipedia.org/" width="400"></iframe>
+
+        <input type="submit" value="submit">
+    </form>
+    <br><br><br>
+</body>
+
+</html>
